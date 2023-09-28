@@ -12,7 +12,6 @@ In this workshop, we will build a simple DApp that demonstrates the core princip
 
 2. **Truffle**: A development environment, testing framework, and asset pipeline for Ethereum, aiming to make life as an Ethereum developer easier.
 
-3. **Flask**: ```pip install Flask``` 
 
 ### Prerequisites
 
@@ -37,4 +36,83 @@ Next setup web3.py
 Once you've signed up, your Infura RPC URL should look like this:
 
 ```https://mainnet.infura.io/v3/YOUR_INFURA_API_KEY_GOES_HERE```
+
+4. Install ganache in your system using
+For Mac OS download from here: [Get Ganache for Mac OS](https://trufflesuite.com/ganache/)https://trufflesuite.com/ganache/
+For Windows/ Ubuntu : Follow [this link](https://trufflesuite.com/docs/ganache/quickstart/)
+
+## Let's do the setup for our new truffle project
+#### What you will do
+1. Install and set up Truffle
+2. Deploy contract on Polygon Network/ Seoplia/ Ganache local node
+3. Check the deployment status on chain
+
+Let's setup a new project
+
+If not already setup please have [Node.js v8+ LTS and npm (packaged with Node)](https://nodejs.org/en) setup.
+1. Next we start by creating a new directory for this Truffle project:
+
+```mkdir first_dapp && cd first_dapp```
+
+2. Download the MetaCoin box:
+
+```truffle unbox metacoin```
+
+3. With that last step, you have created a Truffle project containing folders with contracts, deployment, testing, and configuration files.
+4. Testing the Contract: We will run some pre loaded tests: 
+```truffle test ./test/TestMetaCoin.sol```
+
+``` truffle test ./test/metacoin.js```
+
+5. Compile the smart contract using the following command:
+``` tuffle compile ```
+
+6. Before actually depolying the contract, you need to set up the truffle-config.js file, inserting network and compilers data.
+```javascript
+const HDWalletProvider = require('@truffle/hdwallet-provider');
+const fs = require('fs');
+const mnemonic = fs.readFileSync(".secret").toString().trim();
+
+module.exports = {
+  networks: {
+    development: {
+      host: "127.0.0.1",     // Localhost (default: none)
+      port: 8545,            // Standard Ethereum port (default: none)
+      network_id: "*",       // Any network (default: none)
+    },
+    matic: {
+      provider: () => new HDWalletProvider(mnemonic, `https://rpc-mumbai.maticvigil.com`),
+      network_id: 80001,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    },
+  },
+
+  // Set default mocha options here, use special reporters etc.
+  mocha: {
+    // timeout: 100000
+  },
+
+  // Configure your compilers
+  compilers: {
+    solc: {
+        version: "0.8.13",
+    }
+  }
+}
+```
+
+How to get mnemonics? Check the process [here](https://support.metamask.io/hc/en-us/articles/360015290032-How-to-reveal-your-Secret-Recovery-Phrase)
+
+Let's deploy:
+
+```
+truffle compile
+truffle deploy --network matic // can be any other network as well
+```
+
+
+
+
 

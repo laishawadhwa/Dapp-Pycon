@@ -16,6 +16,8 @@ In this workshop, we will build a simple DApp that demonstrates the core princip
 
 4. **Metamask** : Wallet to send or receive transactions to/from contracts. Setup instructions [here](https://metamask.io/)
 
+5. Explore Standard Smart Contracts [Here](https://www.openzeppelin.com/)
+
 ### Prerequisites
 
 1. **Python**: Make sure you have Python 3.7 or later installed on your system.

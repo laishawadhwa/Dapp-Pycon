@@ -12,6 +12,9 @@ In this workshop, we will build a simple DApp that demonstrates the core princip
 
 2. **Truffle**: A development environment, testing framework, and asset pipeline for Ethereum, aiming to make life as an Ethereum developer easier.
 
+3. **Ganache** : Local testing
+
+4. **Metamask** : Wallet to send or receive transactions to/from contracts. Setup instructions [here](https://metamask.io/)
 
 ### Prerequisites
 

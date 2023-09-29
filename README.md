@@ -15,8 +15,10 @@ In this workshop, we will build a simple DApp that demonstrates the core princip
 3. **Ganache** : Local testing
 
 4. **Metamask** : Wallet to send or receive transactions to/from contracts. Setup instructions [here](https://metamask.io/)
-
+Once your wallets are setup, please load your wallets with SEPOLIA test ETH by going to this [link](https://sepoliafaucet.com/)
+   so load some test MATIC tokens by following [this link](https://mumbaifaucet.com/)
 5. Explore Standard Smart Contracts [Here](https://www.openzeppelin.com/)
+6. Familiarize yourself with Transaction monitoring platforms like [Etherscan](https://sepolia.etherscan.io/), [PolygonScan](https://mumbai.polygonscan.com/)
 
 ### Prerequisites
 

@@ -72,7 +72,7 @@ If not already setup please have [Node.js v8+ LTS and npm (packaged with Node)](
 ``` truffle test ./test/metacoin.js```
 
 5. Compile the smart contract using the following command:
-``` tuffle compile ```
+``` truffle compile ```
 
 6. Before actually depolying the contract, you need to set up the truffle-config.js file, inserting network and compilers data.
 ```javascript

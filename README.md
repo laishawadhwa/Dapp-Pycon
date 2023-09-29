@@ -34,7 +34,7 @@ OR:
 Next setup web3.py
 ``` $ pip install web3```
 
-2. **Node.js and npm**: Install Node.js and npm (Node Package Manager) to manage JavaScript dependencies.
+2. **Node.js and npm**: Install [Node.js and npm (Node Package Manager)](https://nodejs.org/en/download) to manage JavaScript dependencies.
 
 3. **Truffle**: Truffle is a popular development framework for Ethereum. Install it globally using npm:
 ```npm install -g truffle```

@@ -1,6 +1,7 @@
 # Python + Blockchain - Your Guide to Building Full Stack DApps
 Welcome to the Full Stack DApp Workshop! You'll learn how to build a decentralized application (DApp) using Python with web3.py for the blockchain interaction, Truffle for smart contract development, and Node.js for the frontend. By the end of this workshop, you'll have a solid understanding of how to create a full-stack DApp that can interact with the evm based blockchains.
 
+if you want to learn more on web3, subscribe to my weekly newsletter [here](https://web3bitsnbytes.substack.com/)
 # Introduction
 ### What is a DApp?
 A DApp, short for decentralized application, is a type of software application that operates on a decentralized network, typically a blockchain. Unlike traditional applications, DApps don't rely on a centralized server, making them more transparent, secure, and resistant to censorship.
